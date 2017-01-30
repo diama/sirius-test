@@ -1,0 +1,20 @@
+mysql:
+    container_name: mysql56
+    build: docker/mysql56
+    environment:
+        MYSQL_DATABASE: sirius
+        MYSQL_USER: test
+        MYSQL_PASSWORD: test
+        MYSQL_ROOT_PASSWORD: test
+#    ports:
+#        - 330:3306
+    volumes:
+        - ./datadir/mysql:/var/lib/mysql
+
+php:
+    container_name: php7
+    build: docker/php7
+    volumes:
+        - ./src:/src
+    links:
+        - mysql
