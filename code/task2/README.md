@@ -7,7 +7,7 @@
     
 или
 
-    docker exec -it php7 php code/task2/src/index.php
+    docker exec -i php7 php code/task2/src/index.php
     
 ## Запуск тестов
     make task2-test

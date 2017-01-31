@@ -18,4 +18,10 @@ task2:
 
 task2-test:
 	docker exec -i php7 phpunit --bootstrap code/task2/init.php code/task2/tests
-	
+
+task3:
+	docker exec -i mysql56 /bin/bash code/task3/run.sh drop.sql
+	docker exec -i mysql56 /bin/bash code/task3/run.sh create.sql
+	docker exec -i mysql56 /bin/bash code/task3/run.sh fill.sql
+	docker exec -i mysql56 /bin/bash code/task3/run.sh select.sql
+
