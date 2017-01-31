@@ -25,3 +25,10 @@
 
     docker exec -it php7 php code/task1/src/index.php
     
+## Запуск тестов
+    make task1-test
+    
+или
+
+    docker exec -i php7 phpunit --bootstrap code/task1/vendor/autoload.php code/task1/tests
+    
