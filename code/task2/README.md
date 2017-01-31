@@ -14,5 +14,5 @@
     
 или
 
-    docker exec -i php7 phpunit --bootstrap code/task2/vendor/autoload.php code/task2/tests
+    docker exec -i php7 phpunit --bootstrap code/task2/init.php code/task2/tests
     
