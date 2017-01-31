@@ -1,0 +1,16 @@
+{
+  "name": "cirius/task1",
+  "description": "Тестовое задаение 1",
+  "authors": [
+    {
+      "name": "Damir Bedretdinov",
+      "email": "damirmks@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "": "src/"
+    }
+  },
+  "require": {}
+}

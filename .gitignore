@@ -1,4 +1,2 @@
-/docs
-/vendor
-!/**/.gitkeep
 /datadir
+!/**/.gitkeep
